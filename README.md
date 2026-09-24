@@ -1,5 +1,5 @@
 # Keep Going
-
+**Live Application URL:** https://keep-going-jet.vercel.app
 > **Leave a spark. Take a spark. We're all in this together.**
 
 Welcome to **Keep Going**, a collective journal of human resilience and a public encouragement board. In a world that can sometimes feel overwhelming, this space was created to remind us that we are not walking through the storm alone.
@@ -58,7 +58,7 @@ README.md
 ```
 
 
-**Live Application URL:** [Add your deployed URL here]
+
 **Demo Video URL:** [Add your unlisted YouTube demo URL here]
 
 
