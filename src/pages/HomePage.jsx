@@ -1,5 +1,5 @@
 import CreatePostForm from '../components/CreatePostForm';
-// import PostFeed from '../components/PostFeed';
+import PostFeed from '../components/PostFeed';
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       
       <section className="feed-section">
         <h2>Words to keep you going</h2>
-        {/* <PostFeed /> */}
+        <PostFeed />
       </section>
     </div>
   );
