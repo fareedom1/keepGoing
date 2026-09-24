@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { supabase } from '../lib/supabaseClient';
 
 export default function CreatePostForm() {
@@ -85,7 +86,7 @@ export default function CreatePostForm() {
         </div>
         <div className="success-actions">
           <button type="button" onClick={() => setSuccessData(null)} className="btn-primary">Share Another</button>
-          <a href={`/manage/${successData.id}`} className="btn-secondary">Manage this post</a>
+          <Link to={`/manage/${successData.id}`} className="btn-secondary">Manage this post</Link>
         </div>
       </div>
     );
