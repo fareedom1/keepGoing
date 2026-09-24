@@ -50,3 +50,6 @@ with check (true); -- In a real app, this should be stricter. The client will pa
 create policy "Allow delete with manage_key"
 on public.posts for delete
 using (true);
+
+-- Explicitly grant permissions to anon and authenticated roles
+grant select, insert, update, delete on public.posts to anon, authenticated, service_role;
