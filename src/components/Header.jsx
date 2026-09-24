@@ -3,7 +3,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container">
         <h1>Keep Going</h1>
-        <p className="tagline">A place to share the words that help us keep going.</p>
+        <p className="tagline">Leave a spark. Take a spark. We're all in this together.</p>
       </div>
     </header>
   );

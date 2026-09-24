@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="home-page container">
       
       <section className="feed-section">
-        <h2>Words to keep you going</h2>
+        <h2>Notes from the community</h2>
         <PostFeed />
       </section>
 
@@ -17,7 +17,7 @@ export default function HomePage() {
         <div className="modal-overlay" onClick={() => setIsFormOpen(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setIsFormOpen(false)} aria-label="Close form">✕</button>
-            <h2 className="modal-title">Share a little encouragement</h2>
+            <h2 className="modal-title">Leave a note for someone who needs it</h2>
             <CreatePostForm />
           </div>
         </div>

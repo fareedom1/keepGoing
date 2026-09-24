@@ -51,7 +51,7 @@ export default function PostFeed() {
   if (posts.length === 0) {
     return (
       <div className="empty-state">
-        <p>No words here yet. Be the first to leave someone a reason to keep going.</p>
+        <p>It's quiet in here. Be the first to leave a spark for someone else.</p>
       </div>
     );
   }

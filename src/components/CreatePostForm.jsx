@@ -105,7 +105,7 @@ export default function CreatePostForm() {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Anonymous"
+          placeholder="e.g. A fellow traveler"
           maxLength={100}
         />
       </div>
@@ -116,7 +116,7 @@ export default function CreatePostForm() {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Share something encouraging..."
+          placeholder="What words helped you get through your hardest day? Pass them on..."
           maxLength={500}
           required
           rows={4}
@@ -127,7 +127,7 @@ export default function CreatePostForm() {
       </div>
 
       <button type="submit" disabled={isSubmitting || !message.trim()} className="btn-primary">
-        {isSubmitting ? 'Sharing...' : 'Share a Kind Word'}
+        {isSubmitting ? 'Sending...' : 'Send into the world'}
       </button>
     </form>
   );
