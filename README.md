@@ -22,6 +22,41 @@ Whether you are having a hard day and need to read something uplifting, or you'v
 - **Backend / Database:** Supabase (PostgreSQL)
 - **Styling:** Custom CSS with vibrant glassmorphism aesthetics
 
+## CRUD Operations
+
+| Operation | Implementation Details |
+|---|---|
+| **Create** | Visitor enters an optional name and required message, submitted to Supabase. A management key is generated locally and saved with the post. |
+| **Read** | The public board loads and displays posts from newest to oldest. |
+| **Update** | Original creator opens the management route (`/manage/:id`), enters the correct secret management key, and edits their name/message. |
+| **Delete** | Original creator enters the correct key, confirms deletion, and removes their post from the database. |
+
+## Project Structure
+
+```text
+src/
+  components/
+    Header.jsx
+    CreatePostForm.jsx
+    PostFeed.jsx
+    PostCard.jsx
+    SuccessKeyModal.jsx
+    ManagePostForm.jsx
+    Footer.jsx
+  pages/
+    HomePage.jsx
+    ManagePostPage.jsx
+  lib/
+    supabaseClient.js
+  App.jsx
+  main.jsx
+  index.css
+supabase/
+  schema.sql
+.env.example
+README.md
+```
+
 
 **Live Application URL:** [Add your deployed URL here]
 **Demo Video URL:** [Add your unlisted YouTube demo URL here]
